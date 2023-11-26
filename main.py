@@ -1,6 +1,18 @@
-import discord
+import discord, os
 
-bot = discord.Client()
+# Imports load_dotenv function from dotenv module
+
+from dotenv import load_dotenv
+
+# Retrieves the .env file thats in the same folder
+
+load_dotenv()
+
+# Obtains the Token for API
+
+DISCORD_TOKEN = str(os.getenv("DISCORD_TOKEN"))
+
+bot = discord.Client(intents=discord.Intents.default())
 
 @bot.event
 
@@ -24,4 +36,4 @@ async def on_message(message):
 
         await message.channel.send("hey dirtbag")
 
-bot.run("NzA0OTcwNzUyNzQyNjUzOTYz.Xqk5ww.1U_-WdW4aeGWCNF7bOJkLAu_2TM")
+bot.run(DISCORD_TOKEN)
