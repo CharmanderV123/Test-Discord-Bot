@@ -10,7 +10,9 @@ load_dotenv()
 
 # Obtains the Token for API
 
-DISCORD_TOKEN = str(os.getenv("DISCORD_TOKEN"))
+TOKEN = "MTE3NTk1NTkxNDc2MzgwNDczMw.Gzn32I.9AhO9Xx4ArV0ertu3Hcejwnd2OZJjA0tRnzVQo"
+
+# print(TOKEN, "Token Value")
 
 bot = discord.Client(intents=discord.Intents.default())
 
@@ -36,4 +38,4 @@ async def on_message(message):
 
         await message.channel.send("hey dirtbag")
 
-bot.run(DISCORD_TOKEN)
+bot.run(TOKEN)
