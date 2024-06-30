@@ -1,1 +1,2 @@
 # Test-Discord-Bot
+Im a very active discord user, I have worked admin and mod roles across many servers. I design discord servers and setup all the neccesary features using discord bots. As someone who enjoys coding this inspired me to take a dip into designing my own discord bot, this bot is one I designed using the tutorial so its functions are basic. I am working on a more complex moderation bot for server use.
